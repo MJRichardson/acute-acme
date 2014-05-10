@@ -17,3 +17,7 @@ _ReSharper*/
 
 #nuget
 /packages/*/
+
+#copied javascript
+/Acme.Web/acute.min.js
+/Acme.Web/Acme.Client.js
