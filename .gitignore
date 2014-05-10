@@ -16,4 +16,4 @@ _ReSharper*/
 *.swp
 
 #nuget
-/src/packages/*/
+/packages/*/
