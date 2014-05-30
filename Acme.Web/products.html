@@ -3,6 +3,7 @@
 <div acute-repeat="product in Products">
     <h3>{{product.Name}} - {{product.Price | currency}}</h3> 
     <p>{{product.Description}}</p>
+    <p><input type="button" value="Buy" acute-click="AddToCart(product.Name)"/></p>
 </div>
 
 <p><a href="#/cart">Shopping-Cart</a></p>

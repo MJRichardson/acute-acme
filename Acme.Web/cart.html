@@ -1,5 +1,11 @@
 ﻿<h2>Shopping Cart</h2>
 
-<p>You have nothing in your cart...</p>
+<div acute-repeat="productQuantity in ProductQuantities">
+    <p>{{productQuantity.Quantity}} x {{productQuantity.Name}}</p>
+</div>
 
-<p><a href="#/products">Continue shopping</a></p>
+<div acute-show="CartIsEmpty">
+    <p>You have nothing in your cart...</p>
+</div>
+
+<a href="#/products">Continue shopping</a>
