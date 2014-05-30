@@ -7,6 +7,7 @@ namespace Acme.Client
         public AcmeApp()
         {
            Service<CartService>(); 
+           Service<ProductService>(); 
         }
 
         protected override void ConfigureRoutes(RouteProvider routeProvider)
@@ -16,4 +17,3 @@ namespace Acme.Client
         }
     }
 }
-	
