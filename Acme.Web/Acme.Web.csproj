@@ -164,6 +164,10 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(SolutionDir)Acme.Client\acute.min.js $(ProjectDir) /y
+xcopy $(SolutionDir)Acme.Client\bin\$(ConfigurationName)\Acme.Client.js $(ProjectDir) /y</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
